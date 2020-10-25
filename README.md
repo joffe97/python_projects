@@ -13,4 +13,4 @@ Made at the end of 2nd semester. Made with tkinter.
 
 Made at the very start of 2nd semester, almost without functions and objects (very new to programming). This was my first big project. Used turtle graphics.
 
-![Snake made with turtle graphics](images/snake.gif)
+![Snake made with turtle graphics](images/snake_turtleGraphics.gif)
