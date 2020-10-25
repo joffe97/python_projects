@@ -22,4 +22,3 @@ This is probably the project I'm most satisfied by. I made this at the end of th
 Made at the end of 2nd semester. Added realistic physics to the balls.
 
 ![Balls colliding](images/balls.gif)
-
