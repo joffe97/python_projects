@@ -60,7 +60,7 @@ class Gui:
     def display_text(self):
         self.isimg = True
         text = self.next_img.split("/")[1:]
-        self.text_shown = self.text_place.create_text(self.w/2, 20, text=text, font="Arial 15 bold", fill="white")
+        self.text_shown = self.text_place.create_text(self.w/2, 20, text=text, font="Arial 15 bold")
 
     def display_img(self):
         self.isimg = False
