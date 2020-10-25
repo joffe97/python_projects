@@ -1,0 +1,9 @@
+Player;0
+Tina;18
+Player;0
+Joachim;47
+Player;51
+Player;4
+Renate;5
+Player;353
+Joachim;18
