@@ -1,4 +1,4 @@
-# python_projects
+# Python Projects
 My different python projects, starting from 2nd semester into the computer technology bachelor. Most of the projects was made on my spare time while learning python.
 
 ### Tetris
