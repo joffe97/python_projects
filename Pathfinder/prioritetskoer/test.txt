@@ -1,0 +1,29 @@
+8: Prioritetskøer og Hauger (engelsk Heap)
+
+fredag 9. oktober 2020
+
+Splitting i videoer
+-	Prioritetskøer. Hva er en prioritetskø. Oversikt over noen eksempler på bruk
+-	Naiv array-liste prioritetskø
+-	Datastrukturen Haug. Presentasjon av strukturen
+-	Implementasjon av en binærhaug
+-	Huffman algoritmen for filkomprimering
+-	Diskret hendelsessimulering
+
+ADT: Prioritetskø
+Tilsvarer ei vanlig kø bortsett far at den fjerner elementet med høyest prioritet heller enn elementet som ble lagt inn først.
+
+Prioritetskøer har følgende operasjoner:
+-	Add(verdi, prioritet): legg til et element i køen
+-	Remove() -> verdi: Fjerner og returnerer elementet med høyest prioritet. Flere av algoritmene jeg kommer til vil bruke lavere tall for høyere prioriteter, derfor heter denne operasjonen «remove_min» i kode-eksemplene.
+-	Peek() -> verdi: Sjekker hvilket element som har høyest prioritet uten å fjerne det
+-	Økprioritet(verdi, ny_prioritet): Øker prioriteten til et element i køen. Denne heter i kode-eksemplene «decrease_key» siden mange algoritmer bruker lave tall for høye prioriteter.
+
+Bruk av prioritetskøer
+-	Grafalgoritmer som jeg kommer til seinere i faget
+-	Sceduling av prosessor på ei vanlig datamaskin. Eksempel:
+o	Du sitter og skriver på et dokument. Denne prosessen må reagere på dine tastetrykk og musebevegelser og har høy prioritet
+o	Operativsystemet laster ned en oppdatering. Denne har lavere prioritet og «kjører i bakgrunnen»
+o	Andre bakgrunnsprosesser som opprydding av filsystemet, Java Garbage Collector, Andre programmer som oppdaterer seg selv, pågående nedlastinger.
+-	Komprimering av filer (mer om dette eksemplet seinere)
+-	Diskret hendelsessimulering (mer om dette eksemplet seinere)

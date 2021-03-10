@@ -1,0 +1,2 @@
+gcc -std=c99 -g .\main.c -o main.exe
+cl /I C:\Users\Joach\AppData\Local\Programs\Python\Python38\include /LD main.c C:/Users/Joach/AppData/Local/Programs/Python/Python38/libs/python38.lib

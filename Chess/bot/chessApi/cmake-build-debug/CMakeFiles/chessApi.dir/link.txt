@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\chessApi.dir/objects.a
+C:\mingw-x86\bin\ar.exe cr CMakeFiles\chessApi.dir/objects.a @CMakeFiles\chessApi.dir\objects1.rsp
+C:\mingw-x86\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\chessApi.dir/objects.a -Wl,--no-whole-archive  -o chessApi.exe -Wl,--out-implib,libchessApi.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\chessApi.dir\linklibs.rsp

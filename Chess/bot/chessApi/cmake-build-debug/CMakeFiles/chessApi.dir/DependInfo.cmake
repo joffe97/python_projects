@@ -1,0 +1,24 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "E:/Programmering/Python/Programs/Chess/bot/chessApi/board.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/board.c.obj"
+  "E:/Programmering/Python/Programs/Chess/bot/chessApi/pieces.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pieces.c.obj"
+  "E:/Programmering/Python/Programs/Chess/bot/chessApi/pymodule.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pymodule.c.obj"
+  "E:/Programmering/Python/Programs/Chess/bot/chessApi/rules.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/rules.c.obj"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
