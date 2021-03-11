@@ -75,7 +75,7 @@ class Graphics:
         return (x * self.route_size,
                 y * self.route_size)
 
-    def get_clicked_route(self):
+    def get_clicked_route_coords(self):
         pos = pygame.mouse.get_pos()
         relpos = []
         for d in range(2):
@@ -85,7 +85,11 @@ class Graphics:
             elif route_d > 7:
                 route_d = 7
             relpos.append(route_d)
-        return tuple(relpos)
+        return relpos[0], 7 - relpos[1]
+
+    def get_clicked_route(self):
+        x, y = self.get_clicked_route_coords()
+        return x + y * 8
 
 
 if __name__ == '__main__':

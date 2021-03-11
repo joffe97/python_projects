@@ -13,7 +13,8 @@ class Game:
     def mouse_down(self, route_pos):
         if self.selected_route is None:
             self.selected_route = route_pos
-            # chessApi.get_legal_moves()
+            moves = chessApi.getAvailableMoves(self.board.list_board, route_pos)
+            print(moves)
             # display_legal_moves()
         else:
             # chessApi.move_if_legal(from, to)
