@@ -6,9 +6,505 @@
 
 #IncludeRegexTransform: 
 
-E:/Programmering/Python/Programs/Chess/bot/chessApi/main.c
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/Python.h
+patchlevel.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/patchlevel.h
+pyconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyconfig.h
+pymacconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymacconfig.h
+limits.h
+-
+stdio.h
+-
+string.h
+-
+errno.h
+-
+stdlib.h
+-
+unistd.h
+-
+crypt.h
+-
+stddef.h
+-
+assert.h
+-
+pyport.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyport.h
+pymacro.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymacro.h
+pymath.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymath.h
+pytime.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pytime.h
+pymem.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymem.h
+object.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/object.h
+objimpl.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/objimpl.h
+typeslots.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/typeslots.h
+pyhash.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyhash.h
+pydebug.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pydebug.h
+bytearrayobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bytearrayobject.h
+bytesobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bytesobject.h
+unicodeobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/unicodeobject.h
+longobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/longobject.h
+longintrepr.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/longintrepr.h
+boolobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/boolobject.h
+floatobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/floatobject.h
+complexobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/complexobject.h
+rangeobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/rangeobject.h
+memoryobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/memoryobject.h
+tupleobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/tupleobject.h
+listobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/listobject.h
+dictobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/dictobject.h
+odictobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/odictobject.h
+enumobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/enumobject.h
+setobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/setobject.h
+methodobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/methodobject.h
+moduleobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/moduleobject.h
+funcobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/funcobject.h
+classobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/classobject.h
+fileobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/fileobject.h
+pycapsule.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pycapsule.h
+code.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/code.h
+pyframe.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyframe.h
+traceback.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/traceback.h
+sliceobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/sliceobject.h
+cellobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cellobject.h
+iterobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/iterobject.h
+genobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/genobject.h
+descrobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/descrobject.h
+genericaliasobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/genericaliasobject.h
+warnings.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/warnings.h
+weakrefobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/weakrefobject.h
+structseq.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/structseq.h
+namespaceobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/namespaceobject.h
+picklebufobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/picklebufobject.h
+codecs.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/codecs.h
+pyerrors.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyerrors.h
+cpython/initconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/initconfig.h
+pythread.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pythread.h
+pystate.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystate.h
+context.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/context.h
+pyarena.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyarena.h
+modsupport.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/modsupport.h
+compile.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/compile.h
+pythonrun.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pythonrun.h
+pylifecycle.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pylifecycle.h
+ceval.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/ceval.h
+sysmodule.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/sysmodule.h
+osmodule.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/osmodule.h
+intrcheck.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/intrcheck.h
+import.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/import.h
+abstract.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/abstract.h
+bltinmodule.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bltinmodule.h
+eval.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/eval.h
+pyctype.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyctype.h
+pystrtod.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystrtod.h
+pystrcmp.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystrcmp.h
+fileutils.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/fileutils.h
+pyfpe.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyfpe.h
+tracemalloc.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/tracemalloc.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/abstract.h
+cpython/abstract.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/abstract.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bltinmodule.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/boolobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bytearrayobject.h
+stdarg.h
+-
+cpython/bytearrayobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/bytearrayobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/bytesobject.h
+stdarg.h
+-
+cpython/bytesobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/bytesobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cellobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/ceval.h
+cpython/ceval.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/ceval.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/classobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/code.h
+cpython/code.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/code.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/codecs.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/compile.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/complexobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/context.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/abstract.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/bytearrayobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/bytesobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/ceval.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/code.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/dictobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/fileobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/fileutils.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/import.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/initconfig.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/listobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/methodobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/object.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/objimpl.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pyerrors.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pylifecycle.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pymem.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pystate.h
+cpython/initconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/cpython/initconfig.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/sysmodule.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/traceback.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/tupleobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/unicodeobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/descrobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/dictobject.h
+cpython/dictobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/dictobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/enumobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/eval.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/exports.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/fileobject.h
+cpython/fileobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/fileobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/fileutils.h
+cpython/fileutils.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/fileutils.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/floatobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/funcobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/genericaliasobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/genobject.h
+pystate.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystate.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/import.h
+cpython/import.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/import.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/intrcheck.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/iterobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/listobject.h
+cpython/listobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/listobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/longintrepr.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/longobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/memoryobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/methodobject.h
+cpython/methodobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/methodobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/modsupport.h
+stdarg.h
+-
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/moduleobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/namespaceobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/object.h
+cpython/object.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/object.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/objimpl.h
+pymem.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymem.h
+cpython/objimpl.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/objimpl.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/odictobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/osmodule.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/patchlevel.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/picklebufobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyarena.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pycapsule.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyconfig.h
+io.h
+-
+float.h
+-
+basetsd.h
+-
+stdio.h
+-
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyctype.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pydebug.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyerrors.h
+stdarg.h
+-
+cpython/pyerrors.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pyerrors.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyfpe.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyframe.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyhash.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pylifecycle.h
+cpython/pylifecycle.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pylifecycle.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymacconfig.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymacro.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymath.h
+pyconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyconfig.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pymem.h
+pyport.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyport.h
+cpython/pymem.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pymem.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyport.h
+pyconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyconfig.h
+inttypes.h
+-
+stdlib.h
+-
+ieeefp.h
+-
+math.h
+-
+sys/time.h
+-
+time.h
+-
+sys/time.h
+-
+time.h
+-
+sys/select.h
+-
+sys/stat.h
+-
+stat.h
+-
+sys/types.h
+-
+sys/termio.h
+-
+ctype.h
+-
+wctype.h
+-
+exports.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/exports.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystate.h
+cpython/pystate.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/pystate.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystrcmp.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pystrtod.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pythonrun.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pythread.h
+pthread.h
+-
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pytime.h
+pyconfig.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/pyconfig.h
+object.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/object.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/rangeobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/setobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/sliceobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/structseq.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/sysmodule.h
+cpython/sysmodule.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/sysmodule.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/traceback.h
+cpython/traceback.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/traceback.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/tracemalloc.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/tupleobject.h
+cpython/tupleobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/tupleobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/typeslots.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/unicodeobject.h
+stdarg.h
+-
+ctype.h
+-
+wchar.h
+-
+cpython/unicodeobject.h
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/cpython/unicodeobject.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/warnings.h
+
+C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.9_3.9.752.0_x64__qbz5n2kfra8p0/include/weakrefobject.h
+
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.c
+board.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.h
+pieces.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.h
+
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.h
+
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.c
+pieces.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.h
+board.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.h
+
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.h
+
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pymodule.c
+Python.h
+-
 stdio.h
 -
 stdlib.h
 -
+pieces.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.h
+board.h
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.h
 

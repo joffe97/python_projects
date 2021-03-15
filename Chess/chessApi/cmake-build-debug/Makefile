@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\Programmering\Python\Programs\Chess\bot\chessApi
+CMAKE_SOURCE_DIR = C:\Users\Joach\Documents\python_projects\Chess\chessApi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,33 +223,6 @@ pymodule.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chessApi.dir\build.make CMakeFiles/chessApi.dir/pymodule.c.s
 .PHONY : pymodule.c.s
 
-rules.obj: rules.c.obj
-
-.PHONY : rules.obj
-
-# target to build an object file
-rules.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\chessApi.dir\build.make CMakeFiles/chessApi.dir/rules.c.obj
-.PHONY : rules.c.obj
-
-rules.i: rules.c.i
-
-.PHONY : rules.i
-
-# target to preprocess a source file
-rules.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\chessApi.dir\build.make CMakeFiles/chessApi.dir/rules.c.i
-.PHONY : rules.c.i
-
-rules.s: rules.c.s
-
-.PHONY : rules.s
-
-# target to generate assembly for a file
-rules.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\chessApi.dir\build.make CMakeFiles/chessApi.dir/rules.c.s
-.PHONY : rules.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -268,9 +241,6 @@ help:
 	@echo ... pymodule.obj
 	@echo ... pymodule.i
 	@echo ... pymodule.s
-	@echo ... rules.obj
-	@echo ... rules.i
-	@echo ... rules.s
 .PHONY : help
 
 

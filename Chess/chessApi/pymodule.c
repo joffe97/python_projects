@@ -39,11 +39,11 @@ void PyListToCArray(PyObject *pyList, int *cArray) {
     int listPos = 0;
 
     if (!(iter = PyObject_GetIter(pyList))) {
-        PyErr_SetString(PyExc_TypeError, "Can't convert a non iterable object");
+        //PyErr_SetString(PyExc_TypeError, "Can't convert a non iterable object");
     }
-    while (next = PyIter_Next(iter)) {
+    while ((next = PyIter_Next(iter))) {
         if (!PyLong_Check(next)) {
-            PyErr_SetString(PyExc_TypeError, "Can't convert list entry into int");
+            //PyErr_SetString(PyExc_TypeError, "Can't convert list entry into int");
         }
         cArray[listPos++] = PyLong_AsLong(next);
     }
@@ -51,9 +51,10 @@ void PyListToCArray(PyObject *pyList, int *cArray) {
 
 void CArrayToPyList(PyObject *pyList, int *cArray, int size) {
     for (int i = 0; i < size; i++) {
-        if (cArray[i] != -1) {
-            PyList_Append(pyList, Py_BuildValue("i", cArray[i]));
+        if (cArray[i] == -1) {
+            break;
         }
+        PyList_Append(pyList, Py_BuildValue("i", cArray[i]));
     }
 }
 
@@ -68,11 +69,14 @@ static PyObject *Py_getStartBoard(PyObject *self, PyObject *args) {
 static PyObject *Py_getAvailableMoves(PyObject *self, PyObject *args) {
     int route_no, board[64], availableMoves[32];
     PyObject *py_board, *py_moves;
+
     if (!PyArg_ParseTuple(args, "Oi", &py_board, &route_no))
         return NULL;
+    py_moves = PyList_New(0);
 
     PyListToCArray(py_board, board);
     getAvailableMoves(availableMoves, board, route_no);
+    //print_array(availableMoves, 32);
 
     CArrayToPyList(py_moves, availableMoves, 32);
     return py_moves;

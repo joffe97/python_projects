@@ -1,4 +1,4 @@
-# Install script for directory: E:/Programmering/Python/Programs/Chess/bot/chessApi
+# Install script for directory: C:/Users/Joach/Documents/python_projects/Chess/chessApi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Joach/Documents/python_projects/Chess/chessApi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

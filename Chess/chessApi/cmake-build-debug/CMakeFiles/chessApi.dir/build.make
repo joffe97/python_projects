@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\Programmering\Python\Programs\Chess\bot\chessApi
+CMAKE_SOURCE_DIR = C:\Users\Joach\Documents\python_projects\Chess\chessApi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/chessApi.dir/depend.make
@@ -79,65 +79,50 @@ include CMakeFiles/chessApi.dir/flags.make
 CMakeFiles/chessApi.dir/pymodule.c.obj: CMakeFiles/chessApi.dir/flags.make
 CMakeFiles/chessApi.dir/pymodule.c.obj: CMakeFiles/chessApi.dir/includes_C.rsp
 CMakeFiles/chessApi.dir/pymodule.c.obj: ../pymodule.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/chessApi.dir/pymodule.c.obj"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\pymodule.c.obj   -c E:\Programmering\Python\Programs\Chess\bot\chessApi\pymodule.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/chessApi.dir/pymodule.c.obj"
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\pymodule.c.obj   -c C:\Users\Joach\Documents\python_projects\Chess\chessApi\pymodule.c
 
 CMakeFiles/chessApi.dir/pymodule.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/chessApi.dir/pymodule.c.i"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Programmering\Python\Programs\Chess\bot\chessApi\pymodule.c > CMakeFiles\chessApi.dir\pymodule.c.i
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Joach\Documents\python_projects\Chess\chessApi\pymodule.c > CMakeFiles\chessApi.dir\pymodule.c.i
 
 CMakeFiles/chessApi.dir/pymodule.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/chessApi.dir/pymodule.c.s"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Programmering\Python\Programs\Chess\bot\chessApi\pymodule.c -o CMakeFiles\chessApi.dir\pymodule.c.s
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Joach\Documents\python_projects\Chess\chessApi\pymodule.c -o CMakeFiles\chessApi.dir\pymodule.c.s
 
 CMakeFiles/chessApi.dir/pieces.c.obj: CMakeFiles/chessApi.dir/flags.make
 CMakeFiles/chessApi.dir/pieces.c.obj: CMakeFiles/chessApi.dir/includes_C.rsp
 CMakeFiles/chessApi.dir/pieces.c.obj: ../pieces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/chessApi.dir/pieces.c.obj"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\pieces.c.obj   -c E:\Programmering\Python\Programs\Chess\bot\chessApi\pieces.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/chessApi.dir/pieces.c.obj"
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\pieces.c.obj   -c C:\Users\Joach\Documents\python_projects\Chess\chessApi\pieces.c
 
 CMakeFiles/chessApi.dir/pieces.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/chessApi.dir/pieces.c.i"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Programmering\Python\Programs\Chess\bot\chessApi\pieces.c > CMakeFiles\chessApi.dir\pieces.c.i
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Joach\Documents\python_projects\Chess\chessApi\pieces.c > CMakeFiles\chessApi.dir\pieces.c.i
 
 CMakeFiles/chessApi.dir/pieces.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/chessApi.dir/pieces.c.s"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Programmering\Python\Programs\Chess\bot\chessApi\pieces.c -o CMakeFiles\chessApi.dir\pieces.c.s
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Joach\Documents\python_projects\Chess\chessApi\pieces.c -o CMakeFiles\chessApi.dir\pieces.c.s
 
 CMakeFiles/chessApi.dir/board.c.obj: CMakeFiles/chessApi.dir/flags.make
 CMakeFiles/chessApi.dir/board.c.obj: CMakeFiles/chessApi.dir/includes_C.rsp
 CMakeFiles/chessApi.dir/board.c.obj: ../board.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/chessApi.dir/board.c.obj"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\board.c.obj   -c E:\Programmering\Python\Programs\Chess\bot\chessApi\board.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/chessApi.dir/board.c.obj"
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\board.c.obj   -c C:\Users\Joach\Documents\python_projects\Chess\chessApi\board.c
 
 CMakeFiles/chessApi.dir/board.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/chessApi.dir/board.c.i"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Programmering\Python\Programs\Chess\bot\chessApi\board.c > CMakeFiles\chessApi.dir\board.c.i
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Joach\Documents\python_projects\Chess\chessApi\board.c > CMakeFiles\chessApi.dir\board.c.i
 
 CMakeFiles/chessApi.dir/board.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/chessApi.dir/board.c.s"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Programmering\Python\Programs\Chess\bot\chessApi\board.c -o CMakeFiles\chessApi.dir\board.c.s
-
-CMakeFiles/chessApi.dir/rules.c.obj: CMakeFiles/chessApi.dir/flags.make
-CMakeFiles/chessApi.dir/rules.c.obj: CMakeFiles/chessApi.dir/includes_C.rsp
-CMakeFiles/chessApi.dir/rules.c.obj: ../rules.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/chessApi.dir/rules.c.obj"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chessApi.dir\rules.c.obj   -c E:\Programmering\Python\Programs\Chess\bot\chessApi\rules.c
-
-CMakeFiles/chessApi.dir/rules.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/chessApi.dir/rules.c.i"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Programmering\Python\Programs\Chess\bot\chessApi\rules.c > CMakeFiles\chessApi.dir\rules.c.i
-
-CMakeFiles/chessApi.dir/rules.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/chessApi.dir/rules.c.s"
-	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Programmering\Python\Programs\Chess\bot\chessApi\rules.c -o CMakeFiles\chessApi.dir\rules.c.s
+	C:\mingw-x86\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Joach\Documents\python_projects\Chess\chessApi\board.c -o CMakeFiles\chessApi.dir\board.c.s
 
 # Object files for target chessApi
 chessApi_OBJECTS = \
 "CMakeFiles/chessApi.dir/pymodule.c.obj" \
 "CMakeFiles/chessApi.dir/pieces.c.obj" \
-"CMakeFiles/chessApi.dir/board.c.obj" \
-"CMakeFiles/chessApi.dir/rules.c.obj"
+"CMakeFiles/chessApi.dir/board.c.obj"
 
 # External object files for target chessApi
 chessApi_EXTERNAL_OBJECTS =
@@ -145,12 +130,11 @@ chessApi_EXTERNAL_OBJECTS =
 chessApi.exe: CMakeFiles/chessApi.dir/pymodule.c.obj
 chessApi.exe: CMakeFiles/chessApi.dir/pieces.c.obj
 chessApi.exe: CMakeFiles/chessApi.dir/board.c.obj
-chessApi.exe: CMakeFiles/chessApi.dir/rules.c.obj
 chessApi.exe: CMakeFiles/chessApi.dir/build.make
 chessApi.exe: CMakeFiles/chessApi.dir/linklibs.rsp
 chessApi.exe: CMakeFiles/chessApi.dir/objects1.rsp
 chessApi.exe: CMakeFiles/chessApi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable chessApi.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable chessApi.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\chessApi.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -163,6 +147,6 @@ CMakeFiles/chessApi.dir/clean:
 .PHONY : CMakeFiles/chessApi.dir/clean
 
 CMakeFiles/chessApi.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Programmering\Python\Programs\Chess\bot\chessApi E:\Programmering\Python\Programs\Chess\bot\chessApi E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug E:\Programmering\Python\Programs\Chess\bot\chessApi\cmake-build-debug\CMakeFiles\chessApi.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Joach\Documents\python_projects\Chess\chessApi C:\Users\Joach\Documents\python_projects\Chess\chessApi C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug C:\Users\Joach\Documents\python_projects\Chess\chessApi\cmake-build-debug\CMakeFiles\chessApi.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/chessApi.dir/depend
 

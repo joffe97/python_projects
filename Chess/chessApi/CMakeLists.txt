@@ -6,8 +6,7 @@ set(CMAKE_C_STANDARD 11)
 add_executable(chessApi
         pymodule.c
         pieces.c
-        board.c
-        rules.c)
+        board.c)
 
 find_package(PythonLibs REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})

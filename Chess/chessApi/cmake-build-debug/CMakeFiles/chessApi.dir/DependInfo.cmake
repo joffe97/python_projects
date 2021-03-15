@@ -4,10 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/Programmering/Python/Programs/Chess/bot/chessApi/board.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/board.c.obj"
-  "E:/Programmering/Python/Programs/Chess/bot/chessApi/pieces.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pieces.c.obj"
-  "E:/Programmering/Python/Programs/Chess/bot/chessApi/pymodule.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pymodule.c.obj"
-  "E:/Programmering/Python/Programs/Chess/bot/chessApi/rules.c" "E:/Programmering/Python/Programs/Chess/bot/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/rules.c.obj"
+  "C:/Users/Joach/Documents/python_projects/Chess/chessApi/board.c" "C:/Users/Joach/Documents/python_projects/Chess/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/board.c.obj"
+  "C:/Users/Joach/Documents/python_projects/Chess/chessApi/pieces.c" "C:/Users/Joach/Documents/python_projects/Chess/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pieces.c.obj"
+  "C:/Users/Joach/Documents/python_projects/Chess/chessApi/pymodule.c" "C:/Users/Joach/Documents/python_projects/Chess/chessApi/cmake-build-debug/CMakeFiles/chessApi.dir/pymodule.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
