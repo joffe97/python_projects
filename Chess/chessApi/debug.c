@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
     int board[64], availableMoves[32], route_no;
 
     initStartBoard(board);
-    route_no = 12;
+    route_no = 14;
 
     getAvailableMoves(availableMoves, board, route_no);
     return 0;

@@ -116,7 +116,7 @@ void getAvailableMovesPawn(int *dest, int *board, int route_no) {
         if (targetRow < 0 || targetRow > 7) {
             continue;
         }
-        targetRoute = getRouteNo(targetCol, targetRoute);
+        targetRoute = getRouteNo(targetCol, targetRow);
         addPosIfNotOwnColor(dest, &destsize, board, targetRoute, getPieceColor(piece));
     }
     dest[destsize] = -1;
