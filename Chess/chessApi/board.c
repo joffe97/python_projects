@@ -29,6 +29,11 @@ void initStartBoard(int *board) {
     }
 }
 
+void initExampleBoard(int *board, int piece, int route_no) {
+    initBoard(board);
+    board[route_no] = piece;
+}
+
 int getColumn(int route_no) {
     return route_no % 8;
 }

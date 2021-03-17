@@ -1,0 +1,3 @@
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/CMakeFiles/debug.dir
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/CMakeFiles/ALL_BUILD.dir
+C:/Users/Joach/Documents/python_projects/Chess/chessApi/CMakeFiles/ZERO_CHECK.dir

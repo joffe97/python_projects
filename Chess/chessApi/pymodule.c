@@ -66,6 +66,18 @@ static PyObject *Py_getStartBoard(PyObject *self, PyObject *args) {
     return py_list;
 }
 
+static PyObject *Py_getExampleBoard(PyObject *self, PyObject *args) {
+    int board[64], piece, route_no;
+
+    if (!PyArg_ParseTuple(args, "ii", &piece, &route_no))
+        return NULL;
+
+    initExampleBoard(board, piece, route_no);
+    PyObject *py_list = PyList_New(0);
+    CArrayToPyList(py_list, board, 64);
+    return py_list;
+}
+
 static PyObject *Py_getAvailableMoves(PyObject *self, PyObject *args) {
     int route_no, board[64], availableMoves[32];
     PyObject *py_board, *py_moves;
@@ -76,10 +88,24 @@ static PyObject *Py_getAvailableMoves(PyObject *self, PyObject *args) {
 
     PyListToCArray(py_board, board);
     getAvailableMoves(availableMoves, board, route_no);
-    //print_array(availableMoves, 32);
 
     CArrayToPyList(py_moves, availableMoves, 32);
     return py_moves;
+}
+
+static PyObject *Py_movePiece(PyObject *self, PyObject *args) {
+    int board[64], from, to;
+    PyObject *py_board;
+
+    if (!PyArg_ParseTuple(args, "Oii", &py_board, &from, &to))
+        return NULL;
+
+    PyListToCArray(py_board, board);
+    movePiece(board, from, to);
+
+    py_board = PyList_New(0);
+    CArrayToPyList(py_board, board, 64);
+    return py_board;
 }
 
 static PyObject *version(PyObject *self) {
@@ -88,7 +114,9 @@ static PyObject *version(PyObject *self) {
 
 static PyMethodDef myMethods[] = {
         {"getStartBoard", Py_getStartBoard, METH_VARARGS, "Returns list with start board"},
+        {"getExampleBoard", Py_getExampleBoard, METH_VARARGS, "Returns list with example board"},
         {"getAvailableMoves", Py_getAvailableMoves, METH_VARARGS, "Returns available moves for given piece"},
+        {"movePiece", Py_movePiece, METH_VARARGS, "Moves a chess piece"},
         {"version", (PyCFunction)version, METH_NOARGS, "Returns the version."},
         {NULL, NULL, 0, NULL}
 };
