@@ -12,9 +12,9 @@ class SelectedRoute:
 
 class Game:
     def __init__(self):
-        # board_list = chessApi.getStartBoard()
+        board_list = chessApi.getStartBoard()
         # board_list = chessApi.getExampleBoard(piece.Color.white | piece.Pieces.king, 36)
-        board_list = [4, 2, 3, 5, 0, 3, 2, 4, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 12, 10, 11, 13, 14, 11, 10, 12]
+        # board_list = [4, 2, 3, 5, 0, 3, 2, 4, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 12, 10, 11, 13, 14, 11, 10, 12]
         self.board = board.ChessBoard(board_list)
 
         self.selected_route: SelectedRoute = None

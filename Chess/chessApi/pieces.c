@@ -82,17 +82,23 @@ int isLegalMove(int *board, int from_route, int to_route) {
 }
 
 void handlePawnMove(int *board, int from_route, int to_route) {
-    int y1, y2, yDelta;
+    int x1, x2, y1, y2, yDelta, route;
+    x1 = getColumn(from_route);
+    x2 = getColumn(to_route);
     y1 = getRow(from_route);
     y2 = getRow(to_route);
     yDelta = (y1-y2) >= 0 ? (y1-y2) : -(y1-y2);
+
     if (yDelta >= 2) {
-        setPieceToSpecial(board, to_route);
+        setPieceToSpecial(board, from_route);
+    } else if (x1 != x2 && isEmptyRoute(board, to_route)) {
+        route = getRouteNo(x2, y1);
+        board[route] = 0;
     }
 }
 
 void removeAllPassantPawns(int *board) {
-    for (int row = 1; row <= 6; row += 5) {
+    for (int row = 3; row <= 4; row++) {
         for (int col = 0; col <= 7; col++) {
             int route = getRouteNo(col, row);
             int piece = getPiece(board, route);
@@ -105,18 +111,19 @@ void removeAllPassantPawns(int *board) {
 
 void movePiece(int *board, int from_route, int to_route) {
     if (!isLegalMove(board, from_route, to_route)) return;
-    board[to_route] = board[from_route];
-    board[from_route] = 0;
 
     removeAllPassantPawns(board);
 
-    int piece = getPiece(board, to_route);
-    switch (getPieceType(piece)) {
-        case PAWN:
-            handlePawnMove(board, from_route, to_route);
-            break;
-            // TODO: Continue here!!!
+    int piece, type;
+    piece = getPiece(board, from_route);
+    type = getPieceType(piece);
+    if (type == PAWN) {
+        handlePawnMove(board, from_route, to_route);
+    } else if (type == KING || type == ROOK) {
+        setPieceToUnspecial(board, from_route);
     }
+    board[to_route] = board[from_route];
+    board[from_route] = 0;
 }
 
 

@@ -1,6 +1,5 @@
 import pygame
 import math
-import chessApi
 import piece
 import game
 from pieceImages import PieceImages
