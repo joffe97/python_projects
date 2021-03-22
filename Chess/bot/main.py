@@ -40,6 +40,7 @@ class Graphics:
                     self.game.mouse_down(self.get_clicked_route())
 
             self.redraw_window()
+            self.game.bot_move()
 
     def redraw_window(self):
         self.draw_chessboard()

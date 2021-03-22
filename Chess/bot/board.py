@@ -25,7 +25,7 @@ class ChessBoard:
 
     @list_board.setter
     def list_board(self, value):
-        self.__board = self.int_to_list_format(value)
+        self.__board = self.list_to_int_format(value)
 
     @staticmethod
     def list_to_int_format(list_board: List[int]):

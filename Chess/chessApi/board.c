@@ -45,3 +45,9 @@ int getRow(int route_no) {
 int getRouteNo(int column, int row) {
     return row * 8 + column;
 }
+
+void copyBoard(int *from_board, int *to_board) {
+    for (int i = 0; i < 64; i++) {
+        to_board[i] = from_board[i];
+    }
+}

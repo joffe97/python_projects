@@ -25,31 +25,23 @@ int myPow(int x, int n) {
     return(number);
 }
 
-int getPiece(int *board, int route_no) {
+inline int getPiece(int *board, int route_no) {
     return board[route_no];
 }
 
-int isEmptyRoute(int *board, int route_no) {
+inline int isEmptyRoute(int *board, int route_no) {
     return !getPiece(board, route_no);
 }
 
-int getPieceType(int piece) {
+inline int getPieceType(int piece) {
     return piece & B(00111);
 }
 
-int getPieceColor(int piece) {
+inline int getPieceColor(int piece) {
     return piece & B(01000);
 }
 
-int pieceIsBlack(int piece) {
-    return piece & BLACK;
-}
-
-int pieceIsWhite(int piece) {
-    return !pieceIsBlack(piece);
-}
-
-int pieceIsSpecial(int piece) {
+inline int pieceIsSpecial(int piece) {
     return piece & B(10000);
 }
 
@@ -61,11 +53,11 @@ void setPieceToUnspecial(int *board, int route_no) {
     board[route_no] = (board[route_no] & B(01111));
 }
 
-int isLegalRoute(int route_no) {
+inline int isLegalRoute(int route_no) {
     return (route_no <= 0 && route_no < 64);
 }
 
-int isLegalRouteCoords(int x, int y) {
+inline int isLegalRouteCoords(int x, int y) {
     return (x >= 0 && x < 8 && y >= 0 && y < 8);
 }
 
@@ -87,13 +79,40 @@ void handlePawnMove(int *board, int from_route, int to_route) {
     x2 = getColumn(to_route);
     y1 = getRow(from_route);
     y2 = getRow(to_route);
-    yDelta = (y1-y2) >= 0 ? (y1-y2) : -(y1-y2);
 
+    if (y2 == 0 || y2 == 7) {
+        board[from_route] = (B(01000) & board[from_route]) + QUEEN;
+        return;
+    }
+
+    yDelta = (y1-y2) >= 0 ? (y1-y2) : -(y1-y2);
     if (yDelta >= 2) {
         setPieceToSpecial(board, from_route);
     } else if (x1 != x2 && isEmptyRoute(board, to_route)) {
         route = getRouteNo(x2, y1);
         board[route] = 0;
+    }
+}
+
+void handleKingMove(int *board, int from_route, int to_route) {
+    int piece = getPiece(board, from_route);
+
+    if (!pieceIsSpecial(piece)) {
+        setPieceToSpecial(board, from_route);
+
+        int y, x1, x2, xDelta, isKingside, rook_route, old_rook_route, rook;
+        y = getRow(from_route);
+        x1 = getColumn(from_route);
+        x2 = getColumn(to_route);
+        isKingside = (x2-x1) > 0;
+        xDelta = (x1-x2) >= 0 ? (x1-x2) : -(x1-x2);
+        if (xDelta > 1) {
+            rook_route = getRouteNo(x2 + (isKingside ? -1 : 1), y);
+            old_rook_route = getRouteNo(isKingside ? 7 : 0, y);
+            rook = getPiece(board, old_rook_route);
+            board[rook_route] = rook;
+            board[old_rook_route] = 0;
+        }
     }
 }
 
@@ -117,10 +136,15 @@ void movePiece(int *board, int from_route, int to_route) {
     int piece, type;
     piece = getPiece(board, from_route);
     type = getPieceType(piece);
-    if (type == PAWN) {
-        handlePawnMove(board, from_route, to_route);
-    } else if (type == KING || type == ROOK) {
-        setPieceToUnspecial(board, from_route);
+    switch (type) {
+        case PAWN:
+            handlePawnMove(board, from_route, to_route);
+            break;
+        case KING:
+            handleKingMove(board, from_route, to_route);
+            break;
+        case ROOK:
+            setPieceToSpecial(board, from_route);
     }
     board[to_route] = board[from_route];
     board[from_route] = 0;
@@ -256,7 +280,7 @@ void getAvailableMovesPawn(int *dest, int *board, int route_no, int includeOwnCo
 
         int passantPiece = getPiece(board, getRouteNo(targetCol, row));
         if (getPieceType(passantPiece) == PAWN && pieceIsSpecial(passantPiece)) {
-            addPosIfEmpty(dest, &destsize, board, targetRoute, color);
+            addPosIfEmpty(dest, &destsize, board, targetRoute);
         }
 
         addPosIfNotOwnColor(dest, &destsize, board, targetRoute, color);
@@ -334,7 +358,13 @@ int isAttackedBy(int *moves, int *board, int *attackedByType, int color) {
     return 0;
 }
 
-int isLegalKingRoute(int *board, int targetRoute, int kingColor, int includeOwnColor) {
+int isLegalKingRoute(int *boardWithKing, int targetRoute, int includeOwnColor, int kingRoute) {
+    int board[64];
+    copyBoard(boardWithKing, board);
+    board[kingRoute] = 0;
+
+    int kingColor = getPieceColor(getPiece(boardWithKing, kingRoute));
+
     if (!includeOwnColor && !isEmptyRoute(board, targetRoute)) {
         int piece = getPiece(board, targetRoute);
         if (getPieceColor(piece) == kingColor) {
@@ -398,6 +428,25 @@ int isLegalKingRoute(int *board, int targetRoute, int kingColor, int includeOwnC
     return 1;
 }
 
+int isLegalCastle(int *board, int isKingside, int color) {
+    int firstLine = (color == BLACK) * 7;
+    int kingCol = 4;
+    int xrel_dir = isKingside ? 1 : -1;
+    int targetRoute, rook;
+
+    targetRoute = getRouteNo(isKingside ? 7 : 0, firstLine);
+    rook = getPiece(board, targetRoute);
+
+    if (!getPieceType(rook) == ROOK || pieceIsSpecial(rook) || (!isKingside && !isEmptyRoute(board, getRouteNo(1, firstLine)))) return 0;
+
+    for (int i = 1; i <= 2; i++) {
+        targetRoute = getRouteNo(kingCol + (i * xrel_dir), firstLine);
+        if (!isEmptyRoute(board, targetRoute) || !isLegalKingRoute(board, targetRoute, 0, targetRoute)) return 0;
+    }
+
+    return 1;
+}
+
 void getAvailableMovesKing(int *dest, int *board, int route_no, int includeOwnColor) {
     int piece = getPiece(board, route_no);
     int color = getPieceColor(piece);
@@ -413,11 +462,23 @@ void getAvailableMovesKing(int *dest, int *board, int route_no, int includeOwnCo
             y = row + yrel;
             if (!isLegalRouteCoords(x, y)) continue;
             targetRoute = getRouteNo(x, y);
-            if (!isLegalKingRoute(board, targetRoute, color, includeOwnColor)) continue;
+            if (!isLegalKingRoute(board, targetRoute, includeOwnColor, route_no)) continue;
             dest[destsize] = targetRoute;
             destsize++;
         }
     }
+
+    if (!pieceIsSpecial(piece) && isLegalKingRoute(board, route_no, 1, route_no)) {
+        if (isLegalCastle(board, 1, color)) {
+            dest[destsize] = getRouteNo(column + 2, row);
+            destsize++;
+        }
+        if (isLegalCastle(board, 0, color)) {
+            dest[destsize] = getRouteNo(column - 2, row);
+            destsize++;
+        }
+    }
+
     dest[destsize] = -1;
 }
 

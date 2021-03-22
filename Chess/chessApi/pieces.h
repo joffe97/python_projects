@@ -17,8 +17,11 @@
 #define WHITE 0
 #define BLACK 1 << 3
 
-
 void movePiece(int *board, int from_route, int to_route);
 void getAvailableMoves(int *dest, int *board, int route_no);
+
+int getPiece(int *board, int route);
+int getPieceType(int piece);
+int getPieceColor(int piece);
 
 #endif //CHESSAPI_PIECES_H

@@ -1,4 +1,4 @@
 gcc -std=c99 -g .\main.c -o main.exe
 gcc -I "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2288.0_x64__qbz5n2kfra8p0\include" -std=c11 -g .\pymodule.c .\pieces.c .\board.c -o main.exe
 cl /I C:\Users\Joach\AppData\Local\Programs\Python\Python38\include /LD pymodule.c pieces.c board.c C:/Users/Joach/AppData/Local/Programs/Python/Python38/libs/python38.lib
-gcc -Wall -std=c11 -g .\debug.c .\pieces.c .\board.c -o debug.exe
+gcc -Wall -std=c11 -g .\debug.c .\botBrain.c .\pieces.c .\board.c -o debug.exe
