@@ -18,7 +18,7 @@ class Game:
         self.board = board.ChessBoard(board_list)
         self.selected_route: SelectedRoute = None
         self.turn = Color.white
-        self.bots = Color.white, Color.black
+        self.bots = [Color.black]
         self.bot_depth = 4
 
     def next_turn(self):
@@ -28,12 +28,14 @@ class Game:
         if self.selected_route is None or not self.selected_route.available_moves:
             self.selected_route = SelectedRoute(self.board, route_no)
         else:
+            tmpboard = self.board.int_board
             self.board.list_board = chessApi.movePiece(self.board, self.selected_route.route_no, route_no)
             # move = chessApi.getBestMove(self.board.list_board, 3, Color.black)
             # print(move)
             #self.board.list_board = chessApi.movePiece(self.board.list_board, move[0], move[1])
             self.selected_route = None
-            self.next_turn()
+            if tmpboard != self.board.int_board:
+                self.next_turn()
 
     def bot_move(self):
         if self.turn not in self.bots:
