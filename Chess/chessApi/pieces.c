@@ -7,7 +7,7 @@
 #include "pieces.h"
 #include "board.h"
 
-static inline int S_to_binary_(const char *s)
+extern inline int S_to_binary_(const char *s)
 {
     int i = 0;
     while (*s) {
@@ -25,23 +25,23 @@ int myPow(int x, int n) {
     return(number);
 }
 
-inline int getPiece(int *board, int route_no) {
+extern inline int getPiece(int *board, int route_no) {
     return board[route_no];
 }
 
-inline int isEmptyRoute(int *board, int route_no) {
+extern inline int isEmptyRoute(int *board, int route_no) {
     return !getPiece(board, route_no);
 }
 
-inline int getPieceType(int piece) {
+extern inline int getPieceType(int piece) {
     return piece & B(00111);
 }
 
-inline int getPieceColor(int piece) {
+extern inline int getPieceColor(int piece) {
     return piece & B(01000);
 }
 
-inline int pieceIsSpecial(int piece) {
+extern inline int pieceIsSpecial(int piece) {
     return piece & B(10000);
 }
 
@@ -53,11 +53,11 @@ void setPieceToUnspecial(int *board, int route_no) {
     board[route_no] = (board[route_no] & B(01111));
 }
 
-inline int isLegalRoute(int route_no) {
+extern inline int isLegalRoute(int route_no) {
     return (route_no <= 0 && route_no < 64);
 }
 
-inline int isLegalRouteCoords(int x, int y) {
+extern inline int isLegalRouteCoords(int x, int y) {
     return (x >= 0 && x < 8 && y >= 0 && y < 8);
 }
 
@@ -441,7 +441,7 @@ int isLegalCastle(int *board, int isKingside, int color) {
 
     for (int i = 1; i <= 2; i++) {
         targetRoute = getRouteNo(kingCol + (i * xrel_dir), firstLine);
-        if (!isEmptyRoute(board, targetRoute) || !isLegalKingRoute(board, targetRoute, 0, targetRoute)) return 0;
+        if (!isEmptyRoute(board, targetRoute) || !isLegalKingRoute(board, targetRoute, 0, getRouteNo(kingCol, firstLine))) return 0;
     }
 
     return 1;
@@ -505,6 +505,35 @@ void getAvailableMoves(int *dest, int *board, int route_no) {
             break;
         default:
             dest[0] = -1;
+    }
+}
+
+void getAvailableMovesNoCheck(int *dest, int *board, int route_no) {
+    // TODO: Not tested!
+    int piece, color, kingRoute, availableMoves[32], toRoute, toPiece, isLegal, destsize;
+
+    destsize = 0;
+    piece = getPiece(board, route_no);
+    color = getPieceColor(piece);
+    kingRoute = getKingRouteNo(board, color);
+
+    getAvailableMoves(availableMoves, board, route_no);
+    
+    for (int i = 0; i < 32; i++) {
+        toRoute = availableMoves[i];
+        if (toRoute == -1) break;
+        
+        toPiece = getPiece(board, toRoute);
+        board[toRoute] = board[route_no];
+        board[route_no] = 0;
+        isLegal = isLegalKingRoute(board, kingRoute, 1, kingRoute);
+        board[route_no] = board[toRoute];
+        board[toRoute] = toPiece;
+        
+        if (isLegal) {
+            dest[destsize] = toRoute;
+            destsize++;
+        }
     }
 }
 

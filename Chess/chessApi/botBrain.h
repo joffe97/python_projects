@@ -5,15 +5,6 @@
 #ifndef CHESSAPI_BOTBRAIN_H
 #define CHESSAPI_BOTBRAIN_H
 
-#define VALUE_PAWN 100
-#define VALUE_KNIGHT 310
-#define VALUE_BISHOP 320
-#define VALUE_ROOK 500
-#define VALUE_QUEEN 900
-#define VALUE_KING 30000
-
-#define INFINITY 999999
-
 struct moveData {
     int isSet;
     int from;

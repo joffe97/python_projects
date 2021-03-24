@@ -34,10 +34,15 @@ def get_piece_data(piece: int):
     return special, color, piece_type
 
 
+def get_piece_color(piece: int):
+    return piece & (1 << 3)
+
+
 def getRouteBit(field_no, piece):
     return piece << (BITLENGTH * field_no)
 
 
 def getPiece(field_no, board):
+    board = board.int_board
     return (((pow(2, BITLENGTH) - 1) << field_no * BITLENGTH) & board) >> field_no * BITLENGTH    # (11111 << (0 * 5)) & 0111001001
 

@@ -72,6 +72,8 @@ int boardvalue_king[64] = {
     -30, -40, -40, -50, -50, -40, -40, -30
 };*/
 
+#define INFINITY 999999
+
 // Values gotten from https://www.chessprogramming.org/PeSTO%27s_Evaluation_Function
 
 #define MG_PAWN_VALUE 82 
@@ -87,6 +89,8 @@ int boardvalue_king[64] = {
 #define EG_ROOK_VALUE 512
 #define EG_QUEEN_VALUE 936
 #define EG_KING_VALUE 20000
+
+#define MG_MAX_VALUE (16 * MG_PAWN_VALUE + 4 * (MG_KNIGHT_VALUE + MG_BISHOP_VALUE + MG_ROOK_VALUE) + 2 * MG_QUEEN_VALUE)
 
 
 int mg_pawn_table[64] = {
@@ -221,6 +225,25 @@ int eg_king_table[64] = {
     -53, -34, -21, -11, -28, -14, -24, -43
 };
 
+int empty_table[64] = {
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+};
+
+
+int mg_piece_values[7] = {0, MG_PAWN_VALUE, MG_KNIGHT_VALUE, MG_BISHOP_VALUE, MG_ROOK_VALUE, MG_QUEEN_VALUE, MG_KING_VALUE};
+int eg_piece_values[7] = {0, EG_PAWN_VALUE, EG_KNIGHT_VALUE, EG_BISHOP_VALUE, EG_ROOK_VALUE, EG_QUEEN_VALUE, EG_KING_VALUE};
+
+int *mg_piece_tables[7] = {empty_table, mg_pawn_table, mg_knight_table, mg_bishop_table, mg_rook_table, mg_queen_table, mg_king_table};
+int *eg_piece_tables[7] = {empty_table, eg_pawn_table, eg_knight_table, eg_bishop_table, eg_rook_table, eg_queen_table, eg_king_table};
+
+
 // TODO: Add weights for endgame aswell. This could affect more if there is less pieces on the board. E.g. 80% endgame weights and 20% earlygame weights.
 
 void initMoveData(struct moveData *md) {
@@ -257,32 +280,35 @@ int minMoveData(struct moveData **mds, int n) {
     return lowestIndex;
 }
 
-int getPieceValue(int pieceType) {
-    switch (pieceType) {
-        case PAWN:
-            return VALUE_PAWN;
-        case KNIGHT:
-            return VALUE_KNIGHT;
-        case BISHOP:
-            return VALUE_BISHOP;
-        case ROOK:
-            return VALUE_ROOK;
-        case QUEEN:
-            return VALUE_QUEEN;
-        case KING:
-            return VALUE_KING;
-        default:
-            return 0;
+// Return endgame rate. 0 for early earlygame and 100 for late lategame.
+int calculateEndgameRate(int *board) {
+    int pieceSum, pieceType;
+    pieceSum = 0;
+
+    for (int i = 0; i < 64; i++) {
+        pieceType = getPieceType(board[i]);
+        if (!pieceType || pieceType == KING) continue;
+        pieceSum += mg_piece_values[pieceType];
     }
+
+    pieceSum *= 100;
+
+    return pieceSum > MG_MAX_VALUE ? 0 : 100 - (pieceSum / MG_MAX_VALUE);
 }
 
-int getRoutePieceValue(int *board, int route) {
-    int piece, pieceType, pieceValue, valueIndex, routeValue;
+int getPieceValue(int pieceType, int endgameRate) {
+    int mg, eg;
+    mg = mg_piece_values[pieceType] * (100 - endgameRate);
+    eg = eg_piece_values[pieceType] * endgameRate;
+    return (mg + eg) / 200;
+}
+
+int getRoutePieceValue(int *board, int route, int endgameRate) {
+    int piece, pieceType, pieceValue, valueIndex, routeValue, mg, eg;
 
     piece = getPiece(board, route);
     pieceType = getPieceType(piece);
-    pieceValue = getPieceValue(pieceType);
-    if (!pieceValue) return 0;
+    pieceValue = getPieceValue(pieceType, endgameRate);
 
     if (getPieceColor(piece) == WHITE) {
         valueIndex = getRouteNo(getColumn(route), 7 - getRow(route));
@@ -290,53 +316,36 @@ int getRoutePieceValue(int *board, int route) {
         valueIndex = route;
     }
 
-    switch (pieceType) {
-        case PAWN:
-            routeValue = boardvalue_pawn[valueIndex];
-            break;
-        case KNIGHT:
-            routeValue = boardvalue_knight[valueIndex];
-            break;
-        case BISHOP:
-            routeValue = boardvalue_bishop[valueIndex];
-            break;
-        case ROOK:
-            routeValue = boardvalue_rook[valueIndex];
-            break;
-        case QUEEN:
-            routeValue = boardvalue_queen[valueIndex];
-            break;
-        case KING:
-            routeValue = boardvalue_king[valueIndex];
-            break;
-        default:
-            return 0;
-    }
-    
+    mg = mg_piece_tables[pieceType][valueIndex] * (100 - endgameRate);
+    eg = eg_piece_tables[pieceType][valueIndex] * endgameRate;
+    routeValue = (mg + eg) / 200;
+
     return routeValue + pieceValue;
 }
 
 int getScoreForColor(int *board, int color) {
-    int score, piece;
+    int score, piece, endgameRate;
     score = 0;
+    endgameRate = calculateEndgameRate(board);
 
     for (int route = 0; route < 64; route++) {
         piece = getPiece(board, route);
         if (!piece || getPieceColor(piece) != color) continue;
-        score += getRoutePieceValue(board, route);
+        score += getRoutePieceValue(board, route, endgameRate);
     }
 
     return score;
 }
 
 int getScore(int *board) {
-    int score, piece;
+    int score, piece, endgameRate;
     score = 0;
+    endgameRate = calculateEndgameRate(board);
 
     for (int route = 0; route < 64; route++) {
         piece = getPiece(board, route);
         if (!piece) continue;
-        score += (((getPieceColor(piece) == WHITE) * 2) - 1) * getRoutePieceValue(board, route);
+        score += (((getPieceColor(piece) == WHITE) * 2) - 1) * getRoutePieceValue(board, route, endgameRate);
     }
 
     return score;
@@ -401,7 +410,7 @@ void getBestMoveAtBoard(struct moveData *md, int *board, int colorsTurn) {
     }
 }
 
-struct moveData minmax(int *board, int depth, int colorsTurn) {
+struct moveData minmax(int *board, int depth, int colorsTurn, int alpha, int beta) {
     struct moveData md, mdTmp;
     int from, to, pieceRoutes[64], availableMoves[32], board_copy[64];
 
@@ -426,9 +435,14 @@ struct moveData minmax(int *board, int depth, int colorsTurn) {
                 if (to == -1) break;
                 copyBoard(board, board_copy);
                 movePiece(board_copy, from, to);
-                mdTmp = minmax(board_copy, depth - 1, BLACK);
+                mdTmp = minmax(board_copy, depth - 1, BLACK, alpha, beta);
                 if (mdTmp.score > md.score) {
                     setMoveData(&md, from, to, mdTmp.score);
+                }
+                if (mdTmp.score > alpha) alpha = mdTmp.score;
+                if (beta <= alpha) {
+                    i = 64;
+                    break;
                 }
             }
         }
@@ -449,9 +463,14 @@ struct moveData minmax(int *board, int depth, int colorsTurn) {
                 if (to == -1) break;
                 copyBoard(board, board_copy);
                 movePiece(board_copy, from, to);
-                mdTmp = minmax(board_copy, depth - 1, WHITE);
+                mdTmp = minmax(board_copy, depth - 1, WHITE, alpha, beta);
                 if (mdTmp.score < md.score) {
                     setMoveData(&md, from, to, mdTmp.score);
+                }
+                if (mdTmp.score < beta) beta = mdTmp.score;
+                if (beta <= alpha) {
+                    i = 64;
+                    break;
                 }
             }
         }
@@ -461,7 +480,7 @@ struct moveData minmax(int *board, int depth, int colorsTurn) {
 
 void getBestMove(int *from_dest, int *to_dest, int *board, int depth, int colorsTurn) {
     struct moveData md;
-    md = minmax(board, depth, colorsTurn);
+    md = minmax(board, depth, colorsTurn, -INFINITY, INFINITY);
     *from_dest = md.from;
     *to_dest = md.to;
 }

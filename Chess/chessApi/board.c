@@ -46,6 +46,17 @@ int getRouteNo(int column, int row) {
     return row * 8 + column;
 }
 
+int getKingRouteNo(int *board, int color) {
+    int tmpPiece;
+    for (int i = 0; i < 64; i++) {
+        tmpPiece = getPiece(board, i);
+        if (tmpPiece && getPieceType(tmpPiece) == KING && getPieceColor(tmpPiece) == color) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 void copyBoard(int *from_board, int *to_board) {
     for (int i = 0; i < 64; i++) {
         to_board[i] = from_board[i];
